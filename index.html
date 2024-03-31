@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="container"
+      class="container-lg border border-2 border-black d-flex flex-column justify-content-center align-items-center mt-5"
+    >
+      <div class="roll d-flex align-items-center justify-content-center">
+        <div class="auto-image mt-5 me-3">
+            <img
+            id="item_1"
+            class="w-2 h-2 random-image border border-2 border-black"
+            src="./Images/bau.png"
+            alt=""
+          />
+        </div>
+        <div class="auto-image mt-5 me-3">
+            <img
+            id="item_1"
+            class="w-2 h-2 random-image border border-2 border-black"
+            src="./Images/bau.png"
+            alt=""
+          />
+        </div>
+        <div class="auto-image mt-5 me-3">
+            <img
+            id="item_1"
+            class="w-2 h-2 random-image border border-2 border-black"
+            src="./Images/bau.png"
+            alt=""
+          />
+        </div>
+        <div class="roll-btn align-self-end me-3 mt-4">
+          <button class="btn btn-success" id="roll_btn">Quay</button>
+        </div>
+      </div>
+      <div
+        class="bet mt-4 d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="set-image d-flex">
+          <div class="item-count" data-id="0">
+            <span>0</span>
+            <img
+              src="./Images/bau.png"
+              alt=""
+              class="w-2 h-2 p-4 selection-image border border-2 border-black me-3"
+            />
+          </div>
+          <div class="item-count" data-id="1">
+            <span>0</span>
+            <img
+              src="./Images/cua.png"
+              alt=""
+              class="w-2 h-2 p-4 selection-image border border-2 border-black me-3"
+            />
+          </div>
+          <div class="item-count" data-id="2">
+            <span>0</span>
+            <img
+              src="./Images/tom.png"
+              alt=""
+              class="w-2 h-2 p-4 selection-image border border-2 border-black me-3"
+            />
+          </div>
+          <div class="item-count" data-id="3">
+            <span>0</span>
+            <img
+              src="./Images/ca.png"
+              alt=""
+              class="w-2 h-2 p-4 selection-image border border-2 border-black me-3"
+            />
+          </div>
+          <div class="item-count" data-id="4">
+            <span>0</span>
+            <img
+              src="./Images/huou.png"
+              alt=""
+              class="w-2 h-2 p-4 selection-image border border-2 border-black me-3"
+            />
+          </div>
+          <div class="item-count" data-id="5">
+            <span class="count">0</span>
+            <img
+              src="./Images/ga.png"
+              alt=""
+              class="w-2 h-2 p-4 selection-image border border-2 border-black me-3"
+            />
+          </div>
+        </div>
+        <div class="reset-btn align-self-end me-3 mt-4">
+          <button class="btn btn-success">Đặt lại</button>
+        </div>
+      </div>
+
+      <div class="text">
+        Lưu ý: <br />
+        - Số lần đặt ở một 'Hình sẽ là số lần xuất hiện của các "Hình" trên "Kết
+        quả"<br />
+        - Tổng số điểm đặt trong trận đấu, tối đa là 3
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./backend.js"></script>
+  </body>
+</html>
